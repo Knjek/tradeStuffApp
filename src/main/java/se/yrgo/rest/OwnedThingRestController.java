@@ -28,7 +28,6 @@ public class OwnedThingRestController {
         if (all.isEmpty()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Nothing in list");
         }
-
         return ResponseEntity.ok(new OwnedThingList(all));
     }
 
